@@ -45,12 +45,15 @@
   .topo {
     display: flex;
     justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
   }
 
   .logo {
     font-family: var(--fonte-cartaz) ;
-    font-weight: 34px;
+    font-size: 34px;
+    font-weight: 900px;
+    
 
   }
 
@@ -60,12 +63,55 @@
  }
 
  .menu a{
+  text-align: none;
   font-weight: 600;
-
+  
   border-bottom: 4px solid transparent;
 
  }
 
  .menu a.atual {
   border-bottom: var(--fita);
+ }
+
+ .cartazes {
+  padding: 16px;
+  display: flex;
+  gap: 16px;
+  padding: 40px;
+
+ }
+
+ .cartaz-principal {
+  background-color: var(--caixa-dagua);
+  color: var(--branco);
+  flex: 2;
+ }
+
+ .cartaz-principal h1 {
+   font-size:  132px;
+   max-width: 9;
+
+ }
+
+ .cartaz-lateral {
+     background-color:  var(--fita);
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     gap: 32px;
+
+ }
+
+ .cartaz-lateral p {
+  font-size: 22px;
+  font-weight: 600px;
+  line-height: 1.3;
+ }
+
+ .botao {
+  background-color: var(--tinta);
+  color: var(--branco);
+
  }
