@@ -19,6 +19,8 @@ body{
     background-color: var(--concreto);
     color: var(--tinta);
     font-family: var(--fonte-texto);
+    font-size: 17px;
+    line-height: 1.55;
 }
  
 a{
@@ -38,6 +40,7 @@ h1, h2, h3 {
 }
   
 .topo {
+    padding-block: 28px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -47,6 +50,7 @@ h1, h2, h3 {
     font-family: var(--fonte-cartaz);
     font-size: 34px;
     font-weight: 900;
+    text-decoration: none;
 }
 
 .menu {
@@ -57,7 +61,12 @@ h1, h2, h3 {
 .menu a{
     text-decoration: none;
     font-weight: 600;
+    padding-bottom: 4px;
     border-bottom: 4px solid transparent;
+}
+
+.menu a:hover {
+    border-bottom-color: var(--tinta);
 }
 
 .menu a.atual {
@@ -65,8 +74,12 @@ h1, h2, h3 {
 }
 
 .cartazes {
+    margin-top: 16px;
     display: flex;
     gap: 16px;
+}
+
+.cartaz {
     padding: 40px;
 }
 
@@ -87,6 +100,7 @@ h1, h2, h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
     gap: 32px;
 }
 
@@ -99,6 +113,77 @@ h1, h2, h3 {
 .botao {
     background-color: var(--tinta);
     color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 16px 28px;
+    border: none;
+    font-family: var(--fonte-texto);
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: var(--caixa-dagua);
+}
+
+.secao {
+    margin-top: 96px;
+}
+
+.titulo-secao {
+    font-size: 64px;
+    margin-bottom: 32px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.card {
+    background-color: var(--branco);
+    border: 3px solid var(--tinta);
+    flex: 1 1 340px;
+}
+
+.foto {
+    background-color: var(--concreto-escuro);
+}
+
+.foto-azul {
+    background-color: var(--caixa-dagua);
+}
+
+.foto-amarela {
+    background-color: var(--fita);
+}
+
+.foto-tinta {
+    background-color: var(--tinta);
+}
+
+.card .foto {
+    height: 170px;
+}
+
+.card-texto {
+    padding: 24px;
+}
+
+.card h3 {
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 2px solid var(--concreto-escuro);
+    font-weight: 600;
+    font-size: 15px;
 }
 
 .passos {
